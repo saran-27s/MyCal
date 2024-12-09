@@ -1,0 +1,183 @@
+//resources mentioned here can searched from intenet ,u can change as well
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android/tools"
+    xmlns:tools2="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/aes"
+    tools:context=".MainActivity">
+
+    <!-- Expression Display Box with Curved Background -->
+
+    <!-- GridLayout for Buttons -->
+
+    <!-- EditText for Output -->
+
+    <!-- ImageView -->
+
+    <TextView
+        android:id="@+id/expressionBox"
+        android:layout_width="370dp"
+        android:layout_height="52dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/curved_box"
+        android:ellipsize="end"
+        android:gravity="center_vertical|end"
+        android:padding="16dp"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.181"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="398dp"
+        android:layout_height="300dp"
+        android:layout_margin="16dp"
+        android:columnCount="4"
+        android:rowCount="5"
+        android:useDefaultMargins="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <!-- Number Buttons -->
+        <Button
+            android:id="@+id/one"
+            style="@style/ButtonStyle"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/two"
+            style="@style/ButtonStyle"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/three"
+            style="@style/ButtonStyle"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/plus"
+            style="@style/ButtonStyle"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/four"
+            style="@style/ButtonStyle"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/five"
+            style="@style/ButtonStyle"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/six"
+            style="@style/ButtonStyle"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/minus"
+            style="@style/ButtonStyle"
+            android:text="-" />
+
+        <Button
+            android:id="@+id/seven"
+            style="@style/ButtonStyle"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/eight"
+            style="@style/ButtonStyle"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/nine"
+            style="@style/ButtonStyle"
+            android:text="9" />
+
+        <Button
+            android:id="@+id/mul"
+            style="@style/ButtonStyle"
+            android:text="*" />
+
+        <Button
+            android:id="@+id/mod"
+            style="@style/ButtonStyle"
+            android:text="%" />
+
+        <Button
+            android:id="@+id/zero"
+            style="@style/ButtonStyle"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/power"
+            style="@style/ButtonStyle"
+            android:text="^" />
+
+        <Button
+            android:id="@+id/div"
+            style="@style/ButtonStyle"
+            android:text="/" />
+
+        <Button
+            android:id="@+id/clear"
+            style="@style/ButtonStyle"
+            android:text="C" />
+
+        <Button
+            android:id="@+id/equal"
+            style="@style/ButtonStyle"
+            android:text="=" />
+
+        <!-- New Decimal Button -->
+        <Button
+            android:id="@+id/decimal"
+            style="@style/ButtonStyle"
+            android:text="." />
+
+    </GridLayout>
+
+    <EditText
+        android:id="@+id/editTextNumberDecimal"
+        android:layout_width="311dp"
+        android:layout_height="46dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/edit_text_background"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="none"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="212dp"
+        android:layout_height="194dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.133"
+        app:srcCompat="@drawable/logo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
